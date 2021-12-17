@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='UTF-8' />
+    <title>Test</title>
+    <style>
+        #container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #container > * {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<div id="container">
+    <div id="map"></div>
+    <canvas id="deck-canvas"></canvas>
+</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
