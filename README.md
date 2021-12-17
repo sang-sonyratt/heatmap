@@ -5,4 +5,4 @@ To install dependencies:
 >npm install
 
 Commands:
->npm start is the development target, to serve the app.
+>npm start : is the development target, to serve the app.
