@@ -20,6 +20,73 @@
             width: 100%;
             height: 100%;
         }
+        .timeline-wrapper {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            height: 30px;
+            background: white;
+            transition: 1s ease all;
+            border-radius: 4px;
+            box-shadow: 0 1px 5px rgb(0 0 0 / 65%);
+        }
+        .timeline-wrapper button {
+            background: #f2f2f2;
+            width: 65px;
+            height: 100%;
+            border: none;
+            text-transform: uppercase;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        .timeline-wrapper .heatmap-timeline {
+            position: absolute;
+            top: 5px;
+            left: 80px;
+            width: 60%;
+        }
+        .timeline-wrapper .frame-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 30px;
+            width: 40%;
+            text-align: right;
+        }
+        .frame-button button {
+            width: auto;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .frame-button .button4 {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+        .time-point {
+            position: absolute;
+            background: white;
+            border: 2px solid #272727;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            cursor: pointer;
+            top: 10px;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .container {
+            margin: 40px;
+        }
+        .checkmark {
+            position: absolute;
+            margin-left: 20px;
+        }
+        .active {
+            background: black;
+        }
+        .frame-button .clicked {
+            background: #ddd;
+        }
     </style>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
 </head>
@@ -28,6 +95,7 @@
     <div id="map"></div>
     <canvas id="deck-canvas"></canvas>
 </div>
+<div class="timeline-wrapper"></div>
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
